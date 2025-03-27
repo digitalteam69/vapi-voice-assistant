@@ -15,7 +15,7 @@ const clinics = [
 ];
 
 // Function to find the nearest clinic
-function findNearestClinic(location) {
+function findNearestClinic(location) { 
   location = location.toLowerCase().trim();
   return clinics.find(c => c.city.toLowerCase() === location || c.zip === location);
 }
